@@ -14,18 +14,24 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        ”
+        "iconPath": "static/img/tab/index.png",
+        "selectedIconPath": "static/img/tab/index_select.png",
         "text": "调剂"
       },
       {
         "pagePath": "pages/ranking/ranking",
+        "iconPath": "static/img/tab/rank.png",
+        "selectedIconPath": "static/img/tab/rank_select.png",
         "text": "查排名"
       },
       {
         "pagePath": "pages/mine/mine",
+        "iconPath": "static/img/tab/mine.png",
+        "selectedIconPath": "static/img/tab/mine_select.png",
         "text": "我"
       }
-    ]
+    ],
+    "selectedColor": "#4f95f7"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
