@@ -1,12 +1,31 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/ranking/ranking",
+    "pages/mine/mine"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        ”
+        "text": "调剂"
+      },
+      {
+        "pagePath": "pages/ranking/ranking",
+        "text": "查排名"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
