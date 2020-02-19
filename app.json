@@ -1,16 +1,16 @@
 {
   "pages": [
+    "pages/indexPages/detail/detail",
     "pages/index/index",
     "pages/ranking/ranking",
     "pages/mine/mine",
-    "pages/indexPages/detail/detail",
     "pages/indexPages/filter/filter",
     "pages/indexPages/additem/additem"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "考研调剂系统",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

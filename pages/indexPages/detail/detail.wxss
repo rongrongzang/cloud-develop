@@ -1,1 +1,93 @@
 /* pages/indexPages/detail/detail.wxss */
+.detail {
+    padding: 20rpx;
+    margin-bottom: 88rpx;
+}
+
+.detail-btm {
+    height: 88rpx;
+    font-size: 26rpx;
+    color: #6a696a;
+    padding: 0 30rpx;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-top: 2px solid #2e6df4;
+    z-index: 2;
+}
+
+.detail-title {
+    color: #1b1b1b;
+    font-size: 48rpx;
+    font-weight: 450;
+}
+
+.detail-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail-click-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20rpx 0;
+    font-size: 26rpx;
+    color: #6a696a;
+}
+
+.click-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click-icon {
+    width: 36rpx;
+    height: 36rpx;
+    margin-right: 16rpx;
+}
+
+.detail-main-box {
+    position: relative;
+    padding: 12rpx;
+}
+
+.detail-main-con {
+    height: 600rpx;
+    margin: 20rpx;
+    border: 2px solid #dde9fc;
+}
+
+.detail-main-bg {
+    width: 128rpx;
+    height: 128rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.detail-main-bg2 {
+    width: 128rpx;
+    height: 128rpx;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.detail-text {
+    padding: 30rpx 0;
+    border-bottom: 2px dashed #ababab;
+}
+
+.detail-contact-item {
+    display: flex;
+    align-items: center;
+    margin: 12rpx 0;
+}
