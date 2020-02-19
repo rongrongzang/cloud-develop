@@ -2,7 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/ranking/ranking",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/indexPages/detail/detail",
+    "pages/indexPages/filter/filter",
+    "pages/indexPages/additem/additem"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,8 +14,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "iconPath": "static/img/tab/index.png",
         "selectedIconPath": "static/img/tab/index_select.png",

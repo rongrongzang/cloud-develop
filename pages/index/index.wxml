@@ -1,5 +1,44 @@
 <!--index.wxml-->
 <view class="main">
-  <view class="top-container"></view>
-  <view class="list-container">111</view>
+  <movable-area style="width:{{window_width}}px; height:{{window_height}}px;" >
+    <view class="index">
+      <view class="top-container">
+        <view class="search-box">
+          <image class="search-bg" src="/static/img/icon/blue_bg.png"></image>
+          <image class="search-icon" src="/static/img/icon/search_selected.png"></image>
+          <input class="search-input" placeholder-style="color:#777" placeholder="输入学校或专业名称搜索调剂信息" />
+        </view>
+        <view class="years-box">
+          <view data-index="0" bindtap="changTab" class="years-item {{select_year === '0'?'selected-year':''}}">2020年</view>
+          <view data-index="1" bindtap="changTab" class="years-item {{select_year === '1'?'selected-year':''}}">2019年</view>
+          <view data-index="2" bindtap="changTab" class="years-item {{select_year === '2'?'selected-year':''}}">2018年</view>
+          <view style="display: flex;align-items: center;" bindtap="changfilter">
+            <view style="font-size:26px;margin-right:20rpx;color:#ababab;">|</view>
+            <view>筛选</view>
+            <image class="years-icon" src="/static/img/icon/shaixuan.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="list-container">
+        <view class="list-con" wx:for="{{list}}">
+          <view class="list-con-tit">{{item.title}}</view>
+          <view class="list-main-item">
+            <view class="list-item-p"> 学校省份：<text class="list-item-text">{{item.province}}</text></view>
+            <view class="list-item-p">专业门类：<text class="list-item-text">{{item.category}}</text></view>
+          </view>
+          <view class="list-main-item">
+            <view class="list-item-p">专业：<text class="list-item-text">{{item.profession}}</text></view>
+            <view class="list-item-p">研究方向：<text class="list-item-text">{{item.direction}}</text></view>
+          </view>
+          <view class="list-main-btm" bindtap="toDetail">
+            <view>发布时间：{{item.time}}</view>
+            <view class="list-btm-next">查看详情 >></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <movable-view class="movable-box" x="{{cion_width}}" y="{{cion_height}}" direction="all" bindtap="addItem">
+      <image class="movable-icon" src="/static/img/icon/add.png"></image>
+    </movable-view>
+  </movable-area>
 </view>

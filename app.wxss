@@ -1,7 +1,6 @@
 /**app.wxss**/
 .main {
-  padding: 20rpx;
   box-sizing: border-box;
   color: #333;
   font-size: 28rpx;
-} 
+}

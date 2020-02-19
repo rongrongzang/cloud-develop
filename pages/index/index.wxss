@@ -1,21 +1,144 @@
 /**index.wxss**/
-.userinfo {
+.top-container {
+  width: 100%;
+  height: 248rpx;
+  position: fixed;
+}
+
+.search-box {
+  width: 100%;
+  height: 160rpx;
+  position: relative;
+}
+
+.search-bg {
+  width: 100%;
+  height: 160rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.search-icon {
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  top: 60rpx;
+  left: 48rpx;
+  z-index: 2;
+}
+
+.search-input {
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  right: 20rpx;
+  border: 1px solid #ababab;
+  border-radius: 60rpx;
+  padding: 20rpx 20rpx 20rpx 60rpx;
+  margin: 20rpx;
+  background: #fff;
+}
+
+.years-box {
+  height: 88rpx;
+  border-bottom: 1px solid #ababab;
+  background: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+.years-item {
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.years-icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.list-container {
+  position: fixed;
+  top: 248rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f3f3f3;
+  padding: 20rpx;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.list-con {
+  border-radius: 6rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+
+.list-con-tit {
+  font-size: 32rpx;
+  font-weight: 450;
+  color: #1b1b1b;
+  border-bottom: 2px solid #ababab;
+  line-height: 72rpx;
+  margin-bottom: 20rpx;
+}
+
+.list-main-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-main-item .list-item-p {
+  width: 50%;
+  color: #6a696a;
+  line-height: 52rpx;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.list-main-item .list-item-text {
+  color: #444;
+}
+
+.list-main-btm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 26rpx;
+  color: #6a696a;
+  margin-top: 20rpx;
+}
+
+.list-btm-next {
+  color: #70a3f7;
+}
+
+.movable-box {
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
+  background: #5693f7;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.movable-icon {
+  height: 60%;
+  width: 60%;
+
 }
 
-.usermotto {
-  margin-top: 200px;
+.selected-year {
+  color: #4f95f7;
+  border-bottom: 2px solid #4f95f7;
 }
