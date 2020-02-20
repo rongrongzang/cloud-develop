@@ -1,1 +1,18 @@
 /* pages/ranking/ranking.wxss */
+/* background: linear-gradient(#2c69f5, #3e8ef7); */
+.ranking {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(#3f8ef6, #044bf0);
+}
+
+.ranking-con {
+    height: 680rpx;
+    margin: 0 20rpx;
+    border: 2rpx solid #fff;
+    border-radius: 32rpx;
+    background: #fff;
+}

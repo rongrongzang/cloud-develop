@@ -1,2 +1,9 @@
 <!--pages/ranking/ranking.wxml-->
-<text>pages/ranking/ranking.wxml</text>
+<view class="main ranking">
+    <view class="">
+
+    </view>
+    <view class="ranking-con">
+        
+    </view>
+</view>

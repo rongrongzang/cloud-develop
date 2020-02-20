@@ -1,3 +1,6 @@
 {
+  "navigationBarTitleText": "大白考研查排名系统",
+  "navigationBarBackgroundColor": "#3f8ef6",
+  "navigationBarTextStyle": "white",
   "usingComponents": {}
 }
