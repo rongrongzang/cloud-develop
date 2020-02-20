@@ -60,9 +60,19 @@
 }
 
 .detail-main-con {
-    height: 600rpx;
+    padding: 40rpx 20rpx;
     margin: 20rpx;
     border: 2px solid #dde9fc;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 56rpx;
+}
+
+.detail-con-text {
+    color: #1b1b1b;
+    font-weight: 450;
 }
 
 .detail-main-bg {

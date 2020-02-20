@@ -5,9 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    collected: false,
   },
-
+  //收藏
+  SwitchCollect: function () {
+    let collected_val = !this.data.collected
+    this.setData({
+      collected: collected_val
+    });
+  },
+  //跳转 “报错” 页面
+  toError: function (e) {
+    wx.navigateTo({
+      url: '../error/error',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

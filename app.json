@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/indexPages/detail/detail",
     "pages/index/index",
     "pages/ranking/ranking",
     "pages/mine/mine",
+    "pages/indexPages/detail/detail",
+    "pages/indexPages/error/error",
     "pages/indexPages/filter/filter",
     "pages/indexPages/additem/additem"
   ],

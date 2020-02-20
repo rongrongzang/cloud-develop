@@ -1,2 +1,5 @@
 <!--pages/indexPages/additem/additem.wxml-->
 <text>pages/indexPages/additem/additem.wxml</text>
+<view class="main">
+    <view>"发布调剂信息"页面-暂放</view>
+</view>

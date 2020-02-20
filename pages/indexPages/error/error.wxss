@@ -1,0 +1,71 @@
+/* pages/indexPages/error/error.wxss */
+.error {
+    padding: 20rpx;
+}
+
+.error-item {
+    margin-bottom: 40rpx;
+}
+
+.error-title {
+    color: #1b1b1b;
+    font-weight: 450;
+    font-size: 32rpx;
+    line-height: 56rpx;
+}
+
+.error-types-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30rpx 20rpx;
+}
+
+.error-types-item {
+    background: #f3f3f3;
+    border-radius: 60rpx;
+    padding: 8rpx 30rpx;
+    color: #444;
+}
+
+.error-textarea {
+    border: 2rpx solid #f3f3f3;
+    background: #f3f3f3;
+    border-radius: 6rpx;
+    padding: 30rpx;
+    margin: 30rpx 20rpx;
+}
+
+.error-upload {
+    border: 2rpx solid #f3f3f3;
+    background: #f3f3f3;
+    border-radius: 6rpx;
+    padding: 30rpx;
+    margin: 30rpx 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.upload-img {
+    width: 128rpx;
+    height: 128rpx;
+}
+
+.submit-btn {
+    width: 80%;
+    height: 88rpx;
+    font-size: 36rpx;
+    line-height: 88rpx;
+    color: #fff;
+    text-align: center;
+    border-radius: 60rpx;
+    margin: 40rpx 10%;
+    background: linear-gradient(#4395f0, #2e6df4);
+}
+
+.error-selected {
+    background: #70a3f7;
+    color: #cddefa;
+}

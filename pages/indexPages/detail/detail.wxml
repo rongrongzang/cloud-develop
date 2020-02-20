@@ -3,11 +3,11 @@
     <view class="detail-sec">
         <view class="detail-time">发布时间：2020-02-19</view>
         <view class="detail-click-box">
-            <view class="click-box" style="margin-right: 40rpx;">
-                <image class="click-icon" src="/static/img/icon/xing.png"></image>
+            <view class="click-box" style="margin-right: 40rpx;" bindtap="SwitchCollect">
+                <image class="click-icon" src="{{collected?'/static/img/icon/xing_select.png':'/static/img/icon/xing.png'}}"></image>
                 <text>收藏</text>
             </view>
-            <view class="click-box">
+            <view class="click-box" bindtap="toError">
                 <image class="click-icon" src="/static/img/icon/tan.png"></image>
                 <text>报错</text>
             </view>
@@ -17,33 +17,42 @@
         <image class="detail-main-bg" src="/static/img/icon/kuang_top.png"></image>
         <image class="detail-main-bg2" src="/static/img/icon/kuang_btm.png"></image>
         <view style="border: 2px solid #70a3f7; ">
-            <view class="detail-main-con"></view>
+            <view class="detail-main-con">
+                <view>学校省份：<text class="detail-con-text">浙江省</text></view>
+                <view>学校属性：<text class="detail-con-text">暂无</text></view>
+                <view>高校名称：<text class="detail-con-text">浙江科技学院（11057）</text></view>
+                <view>院系名称：<text class="detail-con-text">理学院/曙光大数据学院（009）</text></view>
+                <view>专业门类：<text class="detail-con-text">理学（07）</text></view>
+                <view>所属专业：<text class="detail-con-text">物理学（070200）</text></view>
+                <view>研究方向：<text class="detail-con-text">暂无</text></view>
+                <view>联系方式：<text class="detail-con-text">16993500（QQ）</text></view>
+            </view>
         </view>
     </view>
     <view class="detail-text">
         招生人数：待定
-    　　招生简介：
-    　　学校：长春工业大学，材料科学高等研究院，化学工程学院
-    　　研究方向：光伏材料及器件、智能玻璃、高分子减震降噪材料
-    　　招生专业：高分子材料学（工科）、高分子化学与物理（理学）、化学、环境（专硕）
-    　　相关待遇：
-    　　1.国家补助(600/月）+国家奖学金（2万）+学业奖学金（根据等级，一等1万）
-    　　2.“烯望之星”奖学金和horiba公司设立的“horibascientific”奖学金
-    　　3.“985”高校的学生调剂到我校一次性奖励5000元，“211”高校的学生奖励3000元。
-    　　4.课题组按照研究方向和工作量发放补助。
-    　　5.学生去中科院，吉林大学等单位联合培养，由对方单位额外再发放生活补助。
-    　　导师及研究方向简介：
-    　　王世伟，教授/博士生导师，长春工业大学学术创新团队带头人，吉林省拔尖创新人才。课题组在基础研究领域集中在光电高分子材料与器件的研究，应用领域集中在智能玻璃，高分子减震降噪材料的研制与产业化工作。课题组目前承担并完成多项国家、省部级科研项目，多项成果在企业实现转移转化，发表sci论文30余篇，授权发明专利8项。无论在基础研究还是产业化领域，课题组都经过几年的努力逐渐完善和进步，只要学生学习目标明确、刻苦努力，我团队都会给学生一个优异的学习平台。课题组与吉林大学、长春应化所、北京航空航天大学等多家相关研究团队都建立了长期的合作关系，可以给学生联合培养的模式。
-    　　调剂要求：
-    　　1、本科专业为高分子、材料学、化学等相近专业；
-    　　2、总分和单科达到国家a区分数线；
-    　　3、英语水平优秀（过6级者优先考虑），善于学习钻研；
-    　　4、工作积极热情、求真务实，善于与他人合作，具有良好的科学道德和严谨的科学态度；
-    　　联系方式：
-    　　王老师：qq:147098573;
+    　　 招生简介：
+    　　 学校：长春工业大学，材料科学高等研究院，化学工程学院
+    　　 研究方向：光伏材料及器件、智能玻璃、高分子减震降噪材料
+    　　 招生专业：高分子材料学（工科）、高分子化学与物理（理学）、化学、环境（专硕）
+    　　 相关待遇：
+    　　 1.国家补助(600/月）+国家奖学金（2万）+学业奖学金（根据等级，一等1万）
+    　　 2.“烯望之星”奖学金和horiba公司设立的“horibascientific”奖学金
+    　　 3.“985”高校的学生调剂到我校一次性奖励5000元，“211”高校的学生奖励3000元。
+    　　 4.课题组按照研究方向和工作量发放补助。
+    　 　5.学生去中科院，吉林大学等单位联合培养，由对方单位额外再发放生活补助。
+    　 　导师及研究方向简介：
+    　 　王世伟，教授/博士生导师，长春工业大学学术创新团队带头人，吉林省拔尖创新人才。课题组在基础研究领域集中在光电高分子材料与器件的研究，应用领域集中在智能玻璃，高分子减震降噪材料的研制与产业化工作。课题组目前承担并完成多项国家、省部级科研项目，多项成果在企业实现转移转化，发表sci论文30余篇，授权发明专利8项。无论在基础研究还是产业化领域，课题组都经过几年的努力逐渐完善和进步，只要学生学习目标明确、刻苦努力，我团队都会给学生一个优异的学习平台。课题组与吉林大学、长春应化所、北京航空航天大学等多家相关研究团队都建立了长期的合作关系，可以给学生联合培养的模式。
+    　 　调剂要求：
+     　　1、本科专业为高分子、材料学、化学等相近专业；
+     　　2、总分和单科达到国家a区分数线；
+     　　3、英语水平优秀（过6级者优先考虑），善于学习钻研；
+     　　4、工作积极热情、求真务实，善于与他人合作，具有良好的科学道德和严谨的科学态度；
+     　　联系方式：
+     　　王老师：qq:147098573;
         tel：13196046380（微信同步）；
         邮箱：wswjldx2004@163.com
-    　　课题组主页：http://www.gfzclkt.ccut.edu.cn/main.htm
+        课题组主页：http://www.gfzclkt.ccut.edu.cn/main.htm
     </view>
     <view style="margin:20rpx 0;">
         <view class="detail-contact-item">

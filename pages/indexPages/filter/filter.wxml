@@ -1,2 +1,59 @@
 <!--pages/indexPages/filter/filter.wxml-->
-<text>pages/indexPages/filter/filter.wxml</text>
+<view class="main filter">
+    <view class="search-box">
+        <image class="search-icon" src="/static/img/icon/search_selected.png"></image>
+        <input class="search-input" placeholder-style="color:#777" placeholder="输入学校或专业名称搜索调剂信息" />
+    </view>
+    <view class="province-box" bindtap="switchProvince">
+        <view>选择省份<text style="font-size:28rpx;margin-left:30rpx;color:#5693f7;">{{province_name}}</text> </view>
+        <image class="filter-icon" src="{{province_hidden?'/static/img/icon/xia.png':'/static/img/icon/shang.png'}}"></image>
+    </view>
+    <!-- 选择省份select区域 -->
+    <view hidden="{{province_hidden}}" class="filter-con">
+        <view class="filter-title">A区/一区：</view>
+        <view class="filter-boxs">
+            <view wx:for="{{province_list_a}}" data-province='{{item.index}}' class="{{province_id==item.index?'item item-selected':'item'}}" bindtap="checkProvince">{{item.name}}</view>
+        </view>
+        <view class="filter-title">B区/二区：</view>
+        <view class="filter-boxs">
+            <view wx:for="{{province_list_b}}" data-province='{{item.index}}' class="{{province_id==item.index?'item item-selected':'item'}}" bindtap="checkProvince">{{item.name}}</view>
+        </view>
+    </view>
+    <view style="padding: 20rpx;">
+        <view class="filter-title">院校属性：</view>
+        <view class="filter-boxs">
+            <view data-attr='0' class="{{college_attr==='0'?'item item-selected':'item'}}" bindtap="checkCollegeAttr">985</view>
+            <view data-attr='1' class="{{college_attr==='1'?'item item-selected':'item'}}" bindtap="checkCollegeAttr">211</view>
+            <view data-attr='2' class="{{college_attr==='2'?'item item-selected':'item'}}" bindtap="checkCollegeAttr">双一流</view>
+        </view>
+    </view>
+    <view style="padding: 20rpx;">
+        <view class="filter-title">学习方式：</view>
+        <view class="filter-boxs">
+            <view data-method='0' class="{{learn_method==='0'?'item item-selected':'item'}}" bindtap="checkLearnMethod">非全日制</view>
+            <view data-method='1' class="{{learn_method==='1'?'item item-selected':'item'}}" bindtap="checkLearnMethod">全日制</view>
+        </view>
+    </view>
+    <view style="padding: 20rpx;margin-bottom:140rpx;">
+        <view class="filter-title">专业门类：</view>
+        <view class="filter-boxs">
+            <view data-type='0' class="{{province_type==='0'?'item item-selected':'item'}}" bindtap="checkType">哲学</view>
+            <view data-type='1' class="{{province_type==='1'?'item item-selected':'item'}}" bindtap="checkType">经济学</view>
+            <view data-type='2' class="{{province_type==='2'?'item item-selected':'item'}}" bindtap="checkType">法学</view>
+            <view data-type='3' class="{{province_type==='3'?'item item-selected':'item'}}" bindtap="checkType">教育学</view>
+            <view data-type='4' class="{{province_type==='4'?'item item-selected':'item'}}" bindtap="checkType">文学</view>
+            <view data-type='5' class="{{province_type==='5'?'item item-selected':'item'}}" bindtap="checkType">历史学</view>
+            <view data-type='6' class="{{province_type==='6'?'item item-selected':'item'}}" bindtap="checkType">理学</view>
+            <view data-type='7' class="{{province_type==='7'?'item item-selected':'item'}}" bindtap="checkType">工学</view>
+            <view data-type='8' class="{{province_type==='8'?'item item-selected':'item'}}" bindtap="checkType">农学</view>
+            <view data-type='9' class="{{province_type==='9'?'item item-selected':'item'}}" bindtap="checkType">医学</view>
+            <view data-type='10' class="{{province_type==='10'?'item item-selected':'item'}}" bindtap="checkType">军事学</view>
+            <view data-type='11' class="{{province_type==='11'?'item item-selected':'item'}}" bindtap="checkType">管理学</view>
+            <view data-type='12' class="{{province_type==='12'?'item item-selected':'item'}}" bindtap="checkType">艺术学</view>
+        </view>
+    </view>
+    <view class="filter-btm">
+        <view class="filter-btn" bindtap="clearBtn">重置</view>
+        <view class="filter-btn" bindtap="submitBtn" style="color: #fff;background: #4f95f7;border: 2rpx solid #4f95f7;">确定</view>
+    </view>
+</view>

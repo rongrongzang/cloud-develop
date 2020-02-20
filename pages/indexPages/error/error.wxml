@@ -1,0 +1,23 @@
+<view class="main error">
+    <view class="error-item">
+        <view class="error-title">错误类型<text style="color:#dd3e17;">(*)</text></view>
+        <view class="error-types-box">
+            <view data-type="0" bindtap="changType" class="{{error_type==='0'?'error-types-item error-selected':'error-types-item'}}">调剂信息有误</view>
+            <view data-type="1" bindtap="changType" class="{{error_type==='1'?'error-types-item error-selected':'error-types-item'}}">联系方式失效</view>
+            <view data-type="2" bindtap="changType" class="{{error_type==='2'?'error-types-item error-selected':'error-types-item'}}">其他</view>
+        </view>
+    </view>
+    <view class="error-item">
+        <view class="error-title">错误详情<text style="color:#dd3e17;">(*)</text></view>
+        <textarea class="error-textarea" bindinput="bindKeyInput" placeholder="请填写调剂信息错误详情（不超过140字）～" placeholder-style="color:#6a696a;"/>
+    </view>
+    <view class="error-item">
+        <view class="error-title">图片</view>
+        <view class="error-upload" bindtap="uploadErrorImg">
+            <image class="upload-img" src="{{error_image===''?'/static/img/icon/upload.png':error_image}}"></image>
+            <text style="color:#ababab;font-size:24rpx;">（点击上传图片信息）</text>
+        </view>
+    </view>
+    <view class="submit-btn" bindtap="submitError">反馈</view>
+
+</view>
